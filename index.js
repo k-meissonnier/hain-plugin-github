@@ -10,17 +10,51 @@ module.exports = (pluginContext) => {
         }
         res.add({
             id: query_trim,
-            payload: 'open',
-            title: 'Search ' + query_trim,
-            desc: 'Search in github'
+            payload: 'repository',
+            title: 'Search repositories ' + query_trim,
+            desc: 'Search on github - Repositories'
+        });
+
+        res.add({
+            id: query_trim,
+            payload: 'code',
+            title: 'Search code ' + query_trim,
+            desc: 'Search on github - Code'
+        });
+
+        res.add({
+            id: query_trim,
+            payload: 'issue',
+            title: 'Search issues ' + query_trim,
+            desc: 'Seaarch on github - Issues'
+        });
+
+         res.add({
+            id: query_trim,
+            payload: 'user',
+            title: 'Search users ' + query_trim,
+            desc: 'Seaarch on github - Users'
         });
     }
 
     function execute(id, payload) {
-        if (payload !== 'open') {
+        if (payload == 'repository') {
+            shell.openExternal(`https://github.com/search?utf8=✓&q=${id}`);
             return;
         }
-        shell.openExternal(`https://github.com/search?utf8=✓&q=${id}`);
+         if (payload == 'code') {
+            shell.openExternal(`https://github.com/search?q=${id}&type=Code&utf8=✓`);
+            return;
+        }
+         if (payload == 'issue') {
+            shell.openExternal(`https://github.com/search?q=${id}&type=Issues&utf8=✓`);
+            return;
+        }
+         if (payload == 'user') {
+            shell.openExternal(`https://github.com/search?q=${id}&type=Users&utf8=%E2%9C%93`);
+            return;
+        }
+
     }
 
     return {search, execute};

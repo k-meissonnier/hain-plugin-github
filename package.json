@@ -1,6 +1,6 @@
 {
     "name": "hain-plugin-github",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Hain plugin to search in github",
     "main": "index.js",
     "repository": {

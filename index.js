@@ -12,6 +12,7 @@ module.exports = (pluginContext) => {
             id: query_trim,
             payload: 'repository',
             title: 'Search repositories ' + query_trim,
+            icon: "#fa fa-bookmark",
             desc: 'Search on github - Repositories'
         });
 
@@ -19,6 +20,7 @@ module.exports = (pluginContext) => {
             id: query_trim,
             payload: 'code',
             title: 'Search code ' + query_trim,
+            icon: "#fa fa-code",
             desc: 'Search on github - Code'
         });
 
@@ -26,6 +28,7 @@ module.exports = (pluginContext) => {
             id: query_trim,
             payload: 'issue',
             title: 'Search issues ' + query_trim,
+            icon: "#fa fa-exclamation",
             desc: 'Seaarch on github - Issues'
         });
 
@@ -33,6 +36,7 @@ module.exports = (pluginContext) => {
             id: query_trim,
             payload: 'user',
             title: 'Search users ' + query_trim,
+            icon: "#fa fa-user",
             desc: 'Seaarch on github - Users'
         });
     }

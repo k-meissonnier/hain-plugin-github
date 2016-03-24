@@ -1,0 +1,22 @@
+{
+    "name": "hain-plugin-github",
+    "version": "0.0.1",
+    "description": "Hain plugin to search in github",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/k-meissonnier/hain-plugin-github.git"
+    },
+    "author": "Kévin MEISSONNIER",
+    "license": "MIT",
+    "keywords": [
+        "hain0"
+    ],
+    "homepage": "https://github.com/k-meissonnier/hain-plugin-github.git",
+    "hain": {
+        "prefix": "/github",
+        "usage": "/github something",
+        "icon": "/icon.png",
+        "redirect": "/github "
+    }
+}

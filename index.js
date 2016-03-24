@@ -29,7 +29,7 @@ module.exports = (pluginContext) => {
             payload: 'issue',
             title: 'Search issues ' + query_trim,
             icon: "#fa fa-exclamation",
-            desc: 'Seaarch on github - Issues'
+            desc: 'Search on github - Issues'
         });
 
          res.add({
@@ -37,7 +37,7 @@ module.exports = (pluginContext) => {
             payload: 'user',
             title: 'Search users ' + query_trim,
             icon: "#fa fa-user",
-            desc: 'Seaarch on github - Users'
+            desc: 'Search on github - Users'
         });
     }
 

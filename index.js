@@ -11,7 +11,7 @@ module.exports = (pluginContext) => {
         res.add({
             id: query_trim,
             payload: 'repository',
-            title: 'Search repositories ' + query_trim,
+            title: 'Search repositories',
             icon: "#fa fa-bookmark",
             desc: 'Search on github - Repositories'
         });
@@ -19,7 +19,7 @@ module.exports = (pluginContext) => {
         res.add({
             id: query_trim,
             payload: 'code',
-            title: 'Search code ' + query_trim,
+            title: 'Search code',
             icon: "#fa fa-code",
             desc: 'Search on github - Code'
         });
@@ -27,7 +27,7 @@ module.exports = (pluginContext) => {
         res.add({
             id: query_trim,
             payload: 'issue',
-            title: 'Search issues ' + query_trim,
+            title: 'Search issues',
             icon: "#fa fa-exclamation",
             desc: 'Search on github - Issues'
         });
@@ -35,7 +35,7 @@ module.exports = (pluginContext) => {
          res.add({
             id: query_trim,
             payload: 'user',
-            title: 'Search users ' + query_trim,
+            title: 'Search users',
             icon: "#fa fa-user",
             desc: 'Search on github - Users'
         });
